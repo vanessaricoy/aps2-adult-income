@@ -8997,7 +8997,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0d26c342">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bbcf994e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9198,7 +9198,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6755f09b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b72c7a3c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9977,13 +9977,14 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=707e6ab1">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=46379087">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Comparando-as-previs%C3%B5es-individuais">Comparando as previsões individuais<a class="anchor-link" href="#Comparando-as-previs%C3%B5es-individuais">¶</a></h3><p>Os três casos mostram que uma mesma característica pode contribuir para aumentar ou reduzir a previsão, dependendo dos demais atributos do registro. No falso positivo, por exemplo, características associadas pelo modelo à faixa <code>&gt;50K</code> contribuíram para uma classificação incorreta. Isso ajuda a entender por que o modelo pode errar mesmo quando identifica padrões relevantes nos dados. As explicações SHAP descrevem a contribuição das variáveis para a previsão, mas não demonstram causalidade.</p>
+<h3 id="Comparando-as-previs%C3%B5es-individuais">Comparando as previsões individuais<a class="anchor-link" href="#Comparando-as-previs%C3%B5es-individuais">¶</a></h3><p>Os três casos mostram como as contribuições das variáveis se combinam de maneiras diferentes. No verdadeiro positivo, escolaridade, ocupação executiva/gerencial e estado civil contribuíram para a previsão correta de renda <code>&gt;50K</code>. No falso positivo, a ocupação e o estado civil também favoreceram essa faixa, enquanto a escolaridade atuou no sentido contrário. Mesmo assim, o modelo classificou incorretamente o registro como <code>&gt;50K</code>.</p>
+<p>Já no falso negativo, a escolaridade contribuiu para a previsão de renda <code>&lt;=50K</code>, apesar de outras características favorecerem a classe positiva. Esses exemplos mostram que as classificações dependem da combinação das contribuições aprendidas pelo modelo, e não de uma única variável. O SHAP permite interpretar essas previsões, mas não estabelece relações causais.</p>
 </div>
 </div>
 </div>
