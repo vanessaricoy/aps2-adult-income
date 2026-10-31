@@ -7793,7 +7793,90 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration --></head>
+<!-- End of mermaid configuration --><style>
+body {
+    background: #f8fafc !important;
+    color: #1e293b;
+    font-family: -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Arial, sans-serif;
+}
+
+#notebook-container,
+.jp-Notebook {
+    max-width: 1080px !important;
+    margin: 35px auto !important;
+    padding: 45px !important;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 30px rgba(0,0,0,.06);
+}
+
+h1, h2, h3 {
+    color: #263b55 !important;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.1rem !important;
+    border-bottom: 3px solid #9e2a2b;
+    padding-bottom: 15px;
+}
+
+h2 {
+    margin-top: 40px !important;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+}
+
+p, li {
+    line-height: 1.75;
+}
+
+.codigo-recolhido {
+    margin: 12px 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+}
+
+.codigo-recolhido summary {
+    padding: 11px 16px;
+    cursor: pointer;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.codigo-recolhido summary:hover {
+    background: #e2e8f0;
+}
+
+.codigo-recolhido[open] {
+    padding-bottom: 12px;
+}
+
+.jp-OutputArea {
+    margin: 15px 0 25px;
+}
+
+.jp-OutputArea img,
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    font-size: 14px;
+}
+
+@media (max-width: 700px) {
+    #notebook-container,
+    .jp-Notebook {
+        padding: 15px !important;
+        margin: 0 !important;
+    }
+}
+</style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e11c20c2">
@@ -7825,7 +7908,7 @@ a.anchor-link {
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ed4a96c1">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -7880,7 +7963,7 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -7896,16 +7979,12 @@ Pandas: 3.1.0
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/tmp/aps2deps/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
-  from .autonotebook import tqdm as notebook_tqdm
-</pre>
-</div>
+
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b25616de">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -7955,7 +8034,7 @@ Pandas: 3.1.0
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8057,7 +8136,7 @@ Dimensões originais: (31947, 12)
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5513017c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8096,7 +8175,7 @@ Dimensões originais: (31947, 12)
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8180,7 +8259,7 @@ Ausências após limpeza:
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c6519637">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8206,7 +8285,7 @@ Ausências após limpeza:
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8287,7 +8366,7 @@ Ausências após limpeza:
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f0124298">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8335,7 +8414,7 @@ Ausências após limpeza:
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8376,7 +8455,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d88dd77c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8474,7 +8553,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8542,7 +8621,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d97b7879">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8570,7 +8649,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8596,7 +8675,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2d1be900">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8668,7 +8747,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8750,7 +8829,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=90fbac72">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8793,7 +8872,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8824,7 +8903,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5e16f01e">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8893,7 +8972,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -8969,7 +9048,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9ae67a1b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8989,7 +9068,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -9014,7 +9093,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=43ed1f28">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9058,7 +9137,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -9150,7 +9229,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f1c02833">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9193,7 +9272,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -9225,7 +9304,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=75cf9efc">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9273,7 +9352,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -9354,7 +9433,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c1efcc34">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9402,7 +9481,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -9484,7 +9563,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=21dd8269">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9541,7 +9620,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -9549,91 +9628,106 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 40%|========            | 243/606 [00:11&lt;00:16]       </pre>
+<pre>
+ 40%|========            | 243/606 [00:11&lt;00:16]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 44%|=========           | 266/606 [00:12&lt;00:15]       </pre>
+<pre>
+ 44%|=========           | 266/606 [00:12&lt;00:15]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 48%|==========          | 290/606 [00:13&lt;00:14]       </pre>
+<pre>
+ 48%|==========          | 290/606 [00:13&lt;00:14]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 52%|==========          | 314/606 [00:14&lt;00:13]       </pre>
+<pre>
+ 52%|==========          | 314/606 [00:14&lt;00:13]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 56%|===========         | 339/606 [00:15&lt;00:11]       </pre>
+<pre>
+ 56%|===========         | 339/606 [00:15&lt;00:11]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 60%|============        | 365/606 [00:16&lt;00:10]       </pre>
+<pre>
+ 60%|============        | 365/606 [00:16&lt;00:10]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 64%|=============       | 389/606 [00:17&lt;00:09]       </pre>
+<pre>
+ 64%|=============       | 389/606 [00:17&lt;00:09]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 68%|==============      | 412/606 [00:18&lt;00:08]       </pre>
+<pre>
+ 68%|==============      | 412/606 [00:18&lt;00:08]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 72%|==============      | 437/606 [00:19&lt;00:07]       </pre>
+<pre>
+ 72%|==============      | 437/606 [00:19&lt;00:07]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 77%|===============     | 465/606 [00:20&lt;00:06]       </pre>
+<pre>
+ 77%|===============     | 465/606 [00:20&lt;00:06]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 81%|================    | 492/606 [00:21&lt;00:04]       </pre>
+<pre>
+ 81%|================    | 492/606 [00:21&lt;00:04]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 85%|=================   | 517/606 [00:22&lt;00:03]       </pre>
+<pre>
+ 85%|=================   | 517/606 [00:22&lt;00:03]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 89%|==================  | 542/606 [00:23&lt;00:02]       </pre>
+<pre>
+ 89%|==================  | 542/606 [00:23&lt;00:02]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 94%|=================== | 569/606 [00:24&lt;00:01]       </pre>
+<pre>
+ 94%|=================== | 569/606 [00:24&lt;00:01]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre> 98%|===================| 594/606 [00:25&lt;00:00]       </pre>
+<pre>
+ 98%|===================| 594/606 [00:25&lt;00:00]       </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
@@ -9645,7 +9739,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4631c388">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9680,7 +9774,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -9797,7 +9891,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=381aa601">
-<div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9819,7 +9913,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div>
-</div>
+</div></details>
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
