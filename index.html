@@ -7794,90 +7794,177 @@ a.anchor-link {
   }
 </style>
 <!-- End of mermaid configuration --><style>
+html { scroll-behavior: smooth; }
+
 body {
-    background: #f8fafc !important;
-    color: #1e293b;
-    font-family: -apple-system, BlinkMacSystemFont,
-                 "Segoe UI", Arial, sans-serif;
+  background: #f4f6f9 !important;
+  color: #263447;
 }
 
-#notebook-container,
 .jp-Notebook {
-    max-width: 1080px !important;
-    margin: 35px auto !important;
-    padding: 45px !important;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 5px 30px rgba(0,0,0,.06);
+  max-width: 1050px !important;
+  margin: 30px auto !important;
+  padding: 40px 55px !important;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(0,0,0,.06);
 }
 
-h1, h2, h3 {
-    color: #263b55 !important;
-    line-height: 1.3;
+.jp-MarkdownCell p,
+.jp-MarkdownCell li {
+  font-size: 16px;
+  line-height: 1.8;
 }
 
-h1 {
-    font-size: 2.1rem !important;
-    border-bottom: 3px solid #9e2a2b;
-    padding-bottom: 15px;
+.jp-MarkdownCell h1 {
+  color: #283e56;
+  font-size: 34px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid #9e2a2b;
 }
 
-h2 {
-    margin-top: 40px !important;
-    border-bottom: 1px solid #e2e8f0;
-    padding-bottom: 10px;
+.jp-MarkdownCell h2 {
+  color: #283e56;
+  font-size: 26px;
+  margin-top: 45px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dce3eb;
 }
 
-p, li {
-    line-height: 1.75;
+.jp-MarkdownCell h3 {
+  color: #455c72;
+  margin-top: 28px;
 }
 
-.codigo-recolhido {
-    margin: 12px 0;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    background: #f8fafc;
+.barra-ferramentas {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
 }
 
-.codigo-recolhido summary {
-    padding: 11px 16px;
-    cursor: pointer;
-    color: #475569;
-    font-size: 14px;
-    font-weight: 600;
+#alternar-codigo {
+  border: 1px solid #d5dde7;
+  border-radius: 8px;
+  padding: 11px 17px;
+  background: #f3f6fa;
+  color: #344760;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-.codigo-recolhido summary:hover {
-    background: #e2e8f0;
+.bloco-codigo {
+  margin: 12px 0;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+  background: #f8fafc;
 }
 
-.codigo-recolhido[open] {
-    padding-bottom: 12px;
+.bloco-codigo summary {
+  padding: 11px 16px;
+  cursor: pointer;
+  color: #53677c;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.bloco-codigo[open] {
+  padding-bottom: 10px;
 }
 
 .jp-OutputArea {
-    margin: 15px 0 25px;
+  margin: 12px 0 28px;
 }
 
-.jp-OutputArea img,
-img {
+.jp-OutputArea img {
+  max-width: 100%;
+  height: auto;
+}
+
+.jp-RenderedHTMLCommon table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+}
+
+.jp-RenderedHTMLCommon th {
+  background: #edf2f7;
+  color: #30435a;
+}
+
+.jp-RenderedHTMLCommon th,
+.jp-RenderedHTMLCommon td {
+  padding: 9px 12px;
+  border-bottom: 1px solid #e4e9ef;
+}
+
+.jp-OutputArea pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media(max-width: 700px) {
+  .jp-Notebook {
+    margin: 0 !important;
+    padding: 18px !important;
+  }
+}
+</style><style>
+/* Tabelas */
+.tabela-responsiva {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.tabela-responsiva table {
+    width: max-content !important;
+    min-width: 100%;
+    border-collapse: collapse;
+    table-layout: auto !important;
+}
+
+.tabela-responsiva th,
+.tabela-responsiva td {
+    min-width: 65px;
+    padding: 10px 14px !important;
+    white-space: normal;
+    overflow-wrap: normal;
+    word-break: normal;
+    vertical-align: middle;
+}
+
+.tabela-responsiva th {
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+/* Separação entre as células */
+.jp-CodeCell {
+    margin: 22px 0 30px !important;
+}
+
+.jp-Cell-outputWrapper {
+    padding-top: 12px;
+}
+
+/* Resultados */
+.jp-OutputArea pre {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #475569;
+}
+
+/* Gráficos */
+.jp-OutputArea img {
+    display: block;
     max-width: 100%;
     height: auto;
-}
-
-table {
-    font-size: 14px;
-}
-
-@media (max-width: 700px) {
-    #notebook-container,
-    .jp-Notebook {
-        padding: 15px !important;
-        margin: 0 !important;
-    }
+    margin: 20px auto;
 }
 </style></head>
-<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
+<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light"><div class="barra-ferramentas"><button id="alternar-codigo" type="button">Mostrar todos os códigos</button></div>
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e11c20c2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7908,7 +7995,7 @@ table {
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ed4a96c1">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -7964,27 +8051,8 @@ table {
 </div>
 </div>
 </div></details>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Python: 3.12.6
-scikit-learn: 1.9.1
-Pandas: 3.1.0
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=b25616de">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8041,11 +8109,7 @@ Pandas: 3.1.0
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Origem: Arquivo local: /tmp/aps2data/adult income1.csv
-Dimensões originais: (31947, 12)
-</pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
@@ -8064,7 +8128,7 @@ Dimensões originais: (31947, 12)
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -8129,14 +8193,14 @@ Dimensões originais: (31947, 12)
 <td>&lt;=50K</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5513017c">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8208,7 +8272,7 @@ Ausências após limpeza:
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -8229,7 +8293,7 @@ Ausências após limpeza:
 <td>25</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
@@ -8259,7 +8323,7 @@ Ausências após limpeza:
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c6519637">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8307,7 +8371,7 @@ Ausências após limpeza:
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -8336,7 +8400,7 @@ Ausências após limpeza:
 <td>24.07</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
@@ -8366,7 +8430,7 @@ Ausências após limpeza:
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f0124298">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8455,7 +8519,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d88dd77c">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8575,7 +8639,7 @@ Total de atributos originais: 10
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -8608,7 +8672,7 @@ Total de atributos originais: 10
 <td>Não se aplica</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
@@ -8621,7 +8685,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d97b7879">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8675,7 +8739,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2d1be900">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8769,7 +8833,7 @@ Total de atributos originais: 10
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -8792,7 +8856,7 @@ Total de atributos originais: 10
 <td>-0.0</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
@@ -8829,7 +8893,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=90fbac72">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8903,7 +8967,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=5e16f01e">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -8994,7 +9058,7 @@ Total de atributos originais: 10
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -9029,7 +9093,7 @@ Total de atributos originais: 10
 <td>0.7055</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
@@ -9048,7 +9112,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9ae67a1b">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9093,7 +9157,7 @@ Total de atributos originais: 10
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=43ed1f28">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9159,7 +9223,7 @@ Total de atributos originais: 10
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -9200,7 +9264,7 @@ Total de atributos originais: 10
 <td>0.703</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
@@ -9229,7 +9293,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f1c02833">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9304,7 +9368,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=75cf9efc">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9374,7 +9438,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -9403,7 +9467,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 <td>1.1781</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
@@ -9433,7 +9497,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c1efcc34">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9503,7 +9567,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
         text-align: right;
     }
 </style>
-<table border="1" class="dataframe">
+<div class="tabela-responsiva"><table border="1" class="dataframe">
 <thead>
 <tr style="text-align: right;">
 <th></th>
@@ -9532,7 +9596,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 <td>0.0213</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 </div>
 </div>
 </div>
@@ -9563,7 +9627,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=21dd8269">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9739,7 +9803,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4631c388">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9891,7 +9955,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=381aa601">
-<details class="codigo-recolhido"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
+<details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -9953,5 +10017,20 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </main>
-</body>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const botao = document.getElementById('alternar-codigo');
+  if (!botao) return;
+
+  botao.addEventListener('click', function () {
+    const blocos = [...document.querySelectorAll('.bloco-codigo')];
+    const abrir = blocos.some(bloco => !bloco.open);
+
+    blocos.forEach(bloco => bloco.open = abrir);
+    botao.textContent = abrir
+      ? 'Ocultar todos os códigos'
+      : 'Mostrar todos os códigos';
+  });
+});
+</script></body>
 </html>
