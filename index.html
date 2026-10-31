@@ -9003,7 +9003,7 @@ Total de atributos originais: 10
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Interpreta%C3%A7%C3%A3o-da-curva-de-aprendizado">Interpretação da curva de aprendizado<a class="anchor-link" href="#Interpreta%C3%A7%C3%A3o-da-curva-de-aprendizado">¶</a></h3><p>No maior tamanho de treinamento avaliado, a AP foi de 0,809 no treino e 0,711 na validação, uma diferença de 0,098. Essa distância sugere que ainda existe uma diferença relevante entre o desempenho nos dados utilizados para ajustar o modelo e nos dados de validação. Portanto, há espaço para melhorar sua capacidade de generalização. Ao mesmo tempo, a curva isoladamente não permite afirmar que mais dados resolveriam essa diferença, sendo necessário avaliar também a estabilidade dos resultados.</p>
+<h3 id="Interpreta%C3%A7%C3%A3o-da-curva-de-aprendizado">Interpretação da curva de aprendizado<a class="anchor-link" href="#Interpreta%C3%A7%C3%A3o-da-curva-de-aprendizado">¶</a></h3><p>No maior tamanho de treinamento avaliado, a AP média foi de 0,809 no treino e 0,711 na validação, uma diferença de 0,098. Essa distância sugere possível sobreajuste, pois o desempenho no treinamento permaneceu superior ao observado na validação.</p><p>Entretanto, a diferença isoladamente não permite concluir que o modelo esteja excessivamente ajustado. A curva de validação apresentou melhora discreta com o aumento da amostra, mas não é possível garantir que mais dados eliminariam essa diferença.</p>
 </div>
 </div>
 </div>
@@ -9754,108 +9754,63 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 40%|========            | 243/606 [00:11&lt;00:16]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 44%|=========           | 266/606 [00:12&lt;00:15]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 48%|==========          | 290/606 [00:13&lt;00:14]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 52%|==========          | 314/606 [00:14&lt;00:13]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 56%|===========         | 339/606 [00:15&lt;00:11]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 60%|============        | 365/606 [00:16&lt;00:10]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 64%|=============       | 389/606 [00:17&lt;00:09]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 68%|==============      | 412/606 [00:18&lt;00:08]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 72%|==============      | 437/606 [00:19&lt;00:07]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 77%|===============     | 465/606 [00:20&lt;00:06]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 81%|================    | 492/606 [00:21&lt;00:04]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 85%|=================   | 517/606 [00:22&lt;00:03]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 89%|==================  | 542/606 [00:23&lt;00:02]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 94%|=================== | 569/606 [00:24&lt;00:01]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
- 98%|===================| 594/606 [00:25&lt;00:00]       </pre>
-</div>
+
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
@@ -9983,7 +9938,7 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Comparando-as-previs%C3%B5es-individuais">Comparando as previsões individuais<a class="anchor-link" href="#Comparando-as-previs%C3%B5es-individuais">¶</a></h3><p>Os três casos mostram como as contribuições das variáveis se combinam de maneiras diferentes. No verdadeiro positivo, escolaridade, ocupação executiva/gerencial e estado civil contribuíram para a previsão correta de renda <code>&gt;50K</code>. No falso positivo, a ocupação e o estado civil também favoreceram essa faixa, enquanto a escolaridade atuou no sentido contrário. Mesmo assim, o modelo classificou incorretamente o registro como <code>&gt;50K</code>.</p>
+<h3 id="Comparando-as-previs%C3%B5es-individuais">Comparando as previsões individuais<a class="anchor-link" href="#Comparando-as-previs%C3%B5es-individuais">¶</a></h3><p>No verdadeiro positivo, escolaridade, ocupação executiva/gerencial e estado civil contribuíram para a previsão correta da classe &gt;50K.</p><p>No falso positivo, ocupação executiva/gerencial e estado civil favoreceram a previsão de &gt;50K, enquanto a escolaridade atuou no sentido contrário. Mesmo assim, o modelo classificou incorretamente o registro como &gt;50K, com probabilidade prevista de 54,2%.</p><p>No falso negativo, a escolaridade contribuiu para a previsão de &lt;=50K, apesar de outras características favorecerem a classe positiva. O modelo atribuiu apenas 25,6% de probabilidade a &gt;50K, embora essa fosse a classe real.</p><p>Os casos mostram que a previsão depende da combinação das contribuições das variáveis. O SHAP explica o comportamento do modelo, mas não estabelece relações causais.</p>
 <p>Já no falso negativo, a escolaridade contribuiu para a previsão de renda <code>&lt;=50K</code>, apesar de outras características favorecerem a classe positiva. Esses exemplos mostram que as classificações dependem da combinação das contribuições aprendidas pelo modelo, e não de uma única variável. O SHAP permite interpretar essas previsões, mas não estabelece relações causais.</p>
 </div>
 </div>
