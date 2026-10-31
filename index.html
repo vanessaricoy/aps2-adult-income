@@ -7963,6 +7963,48 @@ body {
     height: auto;
     margin: 20px auto;
 }
+</style><style>
+/* Gráficos SHAP */
+.jp-OutputArea img {
+    display: block;
+    margin: 28px auto 22px !important;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Espaçamento dos textos explicativos */
+.jp-MarkdownCell {
+    margin-bottom: 16px !important;
+}
+
+/* Tabela de resultados */
+.tabela-metricas {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0 32px;
+    font-size: 15px;
+}
+
+.tabela-metricas th {
+    background: #edf2f7;
+    color: #283e56;
+    text-align: left;
+    padding: 13px 18px;
+}
+
+.tabela-metricas td {
+    padding: 12px 18px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabela-metricas tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.tabela-metricas td:last-child {
+    font-weight: 600;
+    color: #9e2a2b;
+}
 </style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light"><div class="barra-ferramentas"><button id="alternar-codigo" type="button">Mostrar todos os códigos</button></div>
 <main>
@@ -8109,7 +8151,6 @@ body {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
@@ -9954,7 +9995,25 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=381aa601">
+</div><section class="resumo-metricas">
+<h3>Desempenho do modelo final — Random Forest</h3>
+<table class="tabela-metricas">
+<thead>
+<tr>
+<th>Métrica</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Accuracy</td><td>81,2%</td></tr>
+<tr><td>Precision</td><td>58,2%</td></tr>
+<tr><td>Recall</td><td>77,5%</td></tr>
+<tr><td>F1-score</td><td>66,5%</td></tr>
+<tr><td>ROC-AUC</td><td>0,884</td></tr>
+<tr><td>Average Precision</td><td>0,703</td></tr>
+</tbody>
+</table>
+</section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=381aa601">
 <details class="bloco-codigo"><summary>Ver código Python</summary><div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
