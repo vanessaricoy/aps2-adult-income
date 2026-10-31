@@ -8997,6 +8997,17 @@ Total de atributos originais: 10
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0d26c342">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Interpreta%C3%A7%C3%A3o-da-curva-de-aprendizado">Interpretação da curva de aprendizado<a class="anchor-link" href="#Interpreta%C3%A7%C3%A3o-da-curva-de-aprendizado">¶</a></h3><p>No maior tamanho de treinamento avaliado, a AP foi de 0,809 no treino e 0,711 na validação, uma diferença de 0,098. Essa distância sugere que ainda existe uma diferença relevante entre o desempenho nos dados utilizados para ajustar o modelo e nos dados de validação. Portanto, há espaço para melhorar sua capacidade de generalização. Ao mesmo tempo, a curva isoladamente não permite afirmar que mais dados resolveriam essa diferença, sendo necessário avaliar também a estabilidade dos resultados.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d05b4c07">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -9183,6 +9194,17 @@ Total de atributos originais: 10
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output" data-mime-type="text/markdown" tabindex="0">
 <p>O F1 passou de <strong>0.609</strong> para <strong>0.670</strong> com o limiar de <strong>0.327</strong>. Os falsos negativos mudaram de <strong>561</strong> para <strong>272</strong>, enquanto os falsos positivos foram de <strong>296</strong> para <strong>671</strong>.</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6755f09b">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="O-que-a-escolha-do-limiar-nos-mostra">O que a escolha do limiar nos mostra<a class="anchor-link" href="#O-que-a-escolha-do-limiar-nos-mostra">¶</a></h3><p>Na validação, reduzir o limiar de 0,50 para aproximadamente 0,327 aumentou o F1 de 0,609 para 0,670. O modelo passou a identificar mais registros da classe <code>&gt;50K</code>, reduzindo os falsos negativos de 561 para 272. Em contrapartida, os falsos positivos aumentaram de 296 para 671. Esse resultado mostra que não existe um limiar ideal para todas as situações: a escolha depende de quais erros são mais importantes na aplicação do modelo.</p>
 </div>
 </div>
 </div>
@@ -9951,6 +9973,17 @@ Verdadeiros negativos=3987, falsos positivos=855, falsos negativos=345, verdadei
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Cuidados-na-leitura-do-SHAP">Cuidados na leitura do SHAP<a class="anchor-link" href="#Cuidados-na-leitura-do-SHAP">¶</a></h3><p>O gráfico global mostra quais variáveis mais alteraram as previsões na amostra explicada. Já os gráficos individuais ajudam a entender por que o modelo chegou a uma previsão específica. Mesmo assim, SHAP explica o comportamento do modelo, e não uma relação de causa e efeito na renda (LUNDBERG; LEE, 2017; MOLNAR, 2022).</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=707e6ab1">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Comparando-as-previs%C3%B5es-individuais">Comparando as previsões individuais<a class="anchor-link" href="#Comparando-as-previs%C3%B5es-individuais">¶</a></h3><p>Os três casos mostram que uma mesma característica pode contribuir para aumentar ou reduzir a previsão, dependendo dos demais atributos do registro. No falso positivo, por exemplo, características associadas pelo modelo à faixa <code>&gt;50K</code> contribuíram para uma classificação incorreta. Isso ajuda a entender por que o modelo pode errar mesmo quando identifica padrões relevantes nos dados. As explicações SHAP descrevem a contribuição das variáveis para a previsão, mas não demonstram causalidade.</p>
 </div>
 </div>
 </div>
